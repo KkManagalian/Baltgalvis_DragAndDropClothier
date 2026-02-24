@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e403a1b61081f1f4986caffd8f5b5743
+guid: b9b7de63a82732d419ad49508e6cebd5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4767370824667024381
-    second: Flowy_0
+      213: 2140266571719136612
+    second: Sans(needs to be fixed)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,43 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Flowy_0
+      name: Sans(needs to be fixed)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 328
-        height: 110
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dfbc6d4a18a192240800000000000000
-      internalID: 4767370824667024381
+      spriteID: 46556fb7b11c3bd10800000000000000
+      internalID: 2140266571719136612
       vertices: []
       indices: 
       edges: []
@@ -160,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Flowy_0: 4767370824667024381
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
