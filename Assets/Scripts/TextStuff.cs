@@ -8,7 +8,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 public class TextStuff : MonoBehaviour
 {
-    private string name;
+    private string userName;
     private int age;
     private int currentYear = DateTime.Now.Year;
     private int year;
@@ -27,8 +27,8 @@ public class TextStuff : MonoBehaviour
 
         } else
         {
-            name = nameInputField.GetComponent<TMP_InputField>().text;
-            textField.GetComponent<TMP_Text>().text = "Skeletons " + name + " ir " + age + " gadus vecs!";
+            userName = nameInputField.GetComponent<TMP_InputField>().text;
+            textField.GetComponent<TMP_Text>().text = "Skeletons " + userName + " ir " + age + " gadus vecs!";
         }
 
         

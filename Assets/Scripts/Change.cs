@@ -5,27 +5,27 @@ public class Change : MonoBehaviour
 {
     public GameObject characterImg;
     public GameObject wardrobe;
-    public GameObject charInfo1;
-    public GameObject charInfo2;
+    public GameObject SansInfo;
+    public GameObject PapyrusInfo;
     public Sprite[] characterSprite;
-    public Sprite[] wardrobeSprite;
+    public Sprite[] SansWardrobe;
+    public Sprite[] PapyrusWardrobe;
+    public GameObject[] SansClothes;
+    public GameObject[] PapyrusClothes;
 
-    private bool Sans = true;
     public void ChangeCharacterImage(int index)
     {
-        if (Sans == true)
+        if (index == 0)
         {
-            Sans = false;
-            charInfo1.SetActive(true);
-            charInfo2.SetActive(false);
+            SansInfo.SetActive(true);
+            PapyrusInfo.SetActive(false);
             characterImg.GetComponent<Image>().sprite = characterSprite[index];
-            wardrobe.GetComponent<Image>().sprite = wardrobeSprite[index];
+        } else if (index == 1)
+        {
+            SansInfo.SetActive(false);
+            PapyrusInfo.SetActive(true);
+            characterImg.GetComponent<Image>().sprite = characterSprite[index];
         }
-        else
-            Sans = true;
-            charInfo1.SetActive(false);
-            charInfo2.SetActive(true);
-            characterImg.GetComponent<Image>().sprite = characterSprite[index];
-            wardrobe.GetComponent<Image>().sprite = wardrobeSprite[index];
+
     }
 }

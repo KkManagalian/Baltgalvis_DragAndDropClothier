@@ -11,7 +11,6 @@ public class DraggableItem : MonoBehaviour
     public static DraggableItem currentDraggedItem;
 
     private bool isDragging = false;
-    private bool isPlaced = false;
 
     void Awake()
     {
@@ -34,7 +33,6 @@ public class DraggableItem : MonoBehaviour
 
     public void StartDragging()
     {
-        if (isPlaced) return;
 
         currentDraggedItem = this;
         isDragging = true;
@@ -45,7 +43,6 @@ public class DraggableItem : MonoBehaviour
     void PlaceItem()
     {
         isDragging = false;
-        isPlaced = true; // 🔒 permanently placed
         canvasGroup.blocksRaycasts = true;
         currentDraggedItem = null;
     }
