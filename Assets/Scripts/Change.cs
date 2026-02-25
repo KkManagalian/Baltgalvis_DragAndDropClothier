@@ -27,40 +27,9 @@ public class Change : MonoBehaviour
             characterImg.GetComponent<Image>().sprite = characterSprite[index];
 
             SAllIcons[0].SetActive(true);
-            //PAllIcons[0].SetActive(false);
+            PAllIcons[0].SetActive(false);
 
-            if (Toggles[0].GetComponent<Toggle>().interactable == true)
-            {
-                wardrobe.GetComponent<Image>().sprite = wardrobeSprite[0];
-                SAllIcons[1].SetActive(true);
-                for(int i = 2; i < SAllIcons.Length; i++)
-                {
-                    SAllIcons[1].SetActive(false);
-                }
-            }else if (Toggles[1].GetComponent<Toggle>().interactable == true)
-            {
-                wardrobe.GetComponent<Image>().sprite = wardrobeSprite[1];
-                SAllIcons[2].SetActive(true);
-                SAllIcons[1].SetActive(false);
-                SAllIcons[3].SetActive(false);
-                SAllIcons[4].SetActive(false);
-
-            }else if(Toggles[2].GetComponent<Toggle>().interactable == true)
-            {
-                wardrobe.GetComponent<Image>().sprite = wardrobeSprite[2];
-                SAllIcons[3].SetActive(true);
-                SAllIcons[1].SetActive(false);
-                SAllIcons[2].SetActive(false);
-                SAllIcons[4].SetActive(false);
-            }else if (Toggles[3].GetComponent<Toggle>().interactable == true)
-            {
-                wardrobe.GetComponent<Image>().sprite = wardrobeSprite[3];
-                SAllIcons[4].SetActive(true);
-                for (int i = 1; i < SAllIcons.Length - 1; i++)
-                {
-                    SAllIcons[i].SetActive(false);
-                }
-            }
+            
 
 
         }
