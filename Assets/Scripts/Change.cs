@@ -26,8 +26,8 @@ public class Change : MonoBehaviour
             PapyrusInfo.SetActive(false);
             characterImg.GetComponent<Image>().sprite = characterSprite[index];
 
-            SAllIcons[0].SetActive(true);
-            PAllIcons[0].SetActive(false);
+           // SAllIcons[0].SetActive(true);
+            //PAllIcons[0].SetActive(false); Nepabeigta dala (Drebes otram characteram)
 
             
 
@@ -39,8 +39,8 @@ public class Change : MonoBehaviour
             PapyrusInfo.SetActive(true);
             characterImg.GetComponent<Image>().sprite = characterSprite[index];
 
-            SAllIcons[0].SetActive(false);
-            PAllIcons[0].SetActive(true);
+            //SAllIcons[0].SetActive(false);
+            //PAllIcons[0].SetActive(true); Nepabeigta dala (Drebes otram characteram)
 
         }
 
