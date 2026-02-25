@@ -3,7 +3,7 @@
 Uz Undertale balstīta skeletu apgerbsana, ļauj lietotājam saģērbt Sans un Papyrus. Spēlē ir liela apģērbu izvēle.
 ## Funkcionalitate
 - [X] - Fonu mūzika
-   - Fona mūzika ir pieejam gan spēlē, gan pirmsekrānā.
+   - [X] Fona mūzika ir pieejam gan spēlēi, gan pirmsekrānā.
 - [X] - Skaņu efekti
   - [X] - Uzspiežot uz tēla tas runā
 - [X] - Vecuma aprēķins
