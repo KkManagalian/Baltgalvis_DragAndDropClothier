@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 228161760989186915}
   - component: {fileID: 7081985264635315873}
   m_Layer: 5
-  m_Name: Slippers
+  m_Name: OuterJacket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 388, y: -531}
-  m_SizeDelta: {x: 194.0261, y: 133.53}
+  m_AnchoredPosition: {x: 391.86987, y: -530.32697}
+  m_SizeDelta: {x: 166.6003, y: 89.9484}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &52132103599139887
 CanvasRenderer:
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5ebac57b4536de04485adf6b84d06659, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0cbc2bff95f8d4b419e3c111cd1ce07a, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -88,4 +88,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd98470d90d33054f8e4e4b47ba6e9ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 0
+  itemType: 3

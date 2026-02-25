@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Error-shirt_0: 2332222209901975864
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

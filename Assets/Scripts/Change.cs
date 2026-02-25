@@ -1,73 +1,77 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 public class Change : MonoBehaviour
 {
     public GameObject characterImg;
     public GameObject wardrobe;
+
     public GameObject SansInfo;
     public GameObject PapyrusInfo;
-    public UnityEngine.UI.Toggle[] toggles;
+
+    public GameObject[] Toggles; //0 - Shoes, 1 - Shorts, 2 - Shirt, 3 - Jacket
+
+    public GameObject[] SAllIcons; //0 - Whole Sans clothes, 1-4 - seperate Clothing
+
+    public GameObject[] PAllIcons; //0 - Whole Papyrus clothes, 1-4 - seperate Clothing
+
     public Sprite[] characterSprite;
-    public Sprite[] SansWardrobe;
-    public Sprite[] PapyrusWardrobe;
-    public GameObject[] SansClothes;
-    public GameObject[] PapyrusClothes;
-
-    private int bigIndex;
-
-
-    void Start()
-    {
-        for (int i = 0; i < toggles.Length; i++)
-        {
-            int index = i;
-
-            toggles[i].onValueChanged.AddListener((isOn) =>
-            {
-                if (isOn)
-                {
-                    ChangeWardobe(index);
-                }
-            });
-        }
-
-        for (int i = 0; i < toggles.Length; i++)
-        {
-            if (toggles[i].isOn)
-            {
-                ChangeWardobe(i);
-                break;
-            }
-        }
-    }
-
-    void ChangeWardobe(int index)
-    {
-        if (index >= 0 && index < SansWardrobe.Length)
-        {
-            wardrobe.GetComponent<UnityEngine.UI.Image>().sprite = SansWardrobe[0];
-        }
-    }
+    public Sprite[] wardrobeSprite;
 
     public void ChangeCharacterImage(int index)
     {
         if (index == 0)
         {
-            bigIndex = 0;
             SansInfo.SetActive(true);
             PapyrusInfo.SetActive(false);
-            characterImg.GetComponent<UnityEngine.UI.Image>().sprite = characterSprite[index];
+            characterImg.GetComponent<Image>().sprite = characterSprite[index];
+
+            SAllIcons[0].SetActive(true);
+            //PAllIcons[0].SetActive(false);
+
+            if (Toggles[0].GetComponent<Toggle>().interactable == true)
+            {
+                wardrobe.GetComponent<Image>().sprite = wardrobeSprite[0];
+                SAllIcons[1].SetActive(true);
+                for(int i = 2; i < SAllIcons.Length; i++)
+                {
+                    SAllIcons[1].SetActive(false);
+                }
+            }else if (Toggles[1].GetComponent<Toggle>().interactable == true)
+            {
+                wardrobe.GetComponent<Image>().sprite = wardrobeSprite[1];
+                SAllIcons[2].SetActive(true);
+                SAllIcons[1].SetActive(false);
+                SAllIcons[3].SetActive(false);
+                SAllIcons[4].SetActive(false);
+
+            }else if(Toggles[2].GetComponent<Toggle>().interactable == true)
+            {
+                wardrobe.GetComponent<Image>().sprite = wardrobeSprite[2];
+                SAllIcons[3].SetActive(true);
+                SAllIcons[1].SetActive(false);
+                SAllIcons[2].SetActive(false);
+                SAllIcons[4].SetActive(false);
+            }else if (Toggles[3].GetComponent<Toggle>().interactable == true)
+            {
+                wardrobe.GetComponent<Image>().sprite = wardrobeSprite[3];
+                SAllIcons[4].SetActive(true);
+                for (int i = 1; i < SAllIcons.Length - 1; i++)
+                {
+                    SAllIcons[i].SetActive(false);
+                }
+            }
 
 
         }
         else if (index == 1)
         {
-            bigIndex = 1;
             SansInfo.SetActive(false);
             PapyrusInfo.SetActive(true);
-            characterImg.GetComponent<UnityEngine.UI.Image>().sprite = characterSprite[index];
+            characterImg.GetComponent<Image>().sprite = characterSprite[index];
+
+            SAllIcons[0].SetActive(false);
+            PAllIcons[0].SetActive(true);
 
         }
 
