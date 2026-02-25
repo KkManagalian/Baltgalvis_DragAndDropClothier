@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d22a3297f293a8a4283f6c113b4f9c8c
+guid: 68d9e8a84e95e704ba5d63d4749e2f20
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -345390672925042009
-    second: Wardrobe3_0
+      213: 102938546461711714
+    second: Outer-shorts_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wardrobe3_0
+      name: Outer-shorts_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 600
-        height: 592
+        x: 295
+        y: 99
+        width: 422
+        height: 293
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7aad19f430de43bf0800000000000000
-      internalID: -345390672925042009
+      spriteID: 26d9b870016bd6100800000000000000
+      internalID: 102938546461711714
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Wardrobe3_0: -345390672925042009
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

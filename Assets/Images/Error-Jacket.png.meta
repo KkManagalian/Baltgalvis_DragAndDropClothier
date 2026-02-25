@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: d22a3297f293a8a4283f6c113b4f9c8c
+guid: 1e7a081ab41fa6446a8256fd248d760b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -345390672925042009
-    second: Wardrobe3_0
+      213: -6881675196408938532
+    second: Error-Jacket_0
+  - first:
+      213: 3937558472307743728
+    second: Error-Jacket_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -126,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wardrobe3_0
+      name: Error-Jacket_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 600
-        height: 592
+        x: 170
+        y: 365
+        width: 309
+        height: 307
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +144,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7aad19f430de43bf0800000000000000
-      internalID: -345390672925042009
+      spriteID: cdfbd6a9ed06f70a0800000000000000
+      internalID: -6881675196408938532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Error-Jacket_1
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 358
+        width: 304
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fb9b38819405a630800000000000000
+      internalID: 3937558472307743728
       vertices: []
       indices: 
       edges: []
@@ -151,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Wardrobe3_0: -345390672925042009
+      Error-Jacket_0: -6881675196408938532
+      Error-Jacket_1: 3937558472307743728
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
